@@ -1,8 +1,13 @@
 {
 	"name": "commit-msg-picker",
-	"displayName": "commit-msg-picker",
+	"displayName": "WhatTheCommit",
+	"icon": "media/logo.png",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Bukii/commit-msg-picker"
+	},
 	"description": "Displays a random commit message for your next commit",
-	"version": "0.0.1",
+	"version": "0.1.0",
 	"engines": {
 		"vscode": "^1.55.0"
 	},
@@ -10,14 +15,14 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:commit-msg-picker.helloWorld"
+		"*"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "commit-msg-picker.helloWorld",
-				"title": "Hello World"
+				"command": "commit-msg-picker.nextMessage",
+				"title": "Show next commit message"
 			}
 		]
 	},
